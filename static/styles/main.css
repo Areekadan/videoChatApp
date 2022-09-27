@@ -6,7 +6,7 @@
 body{
     background-color: #252525;
 }
-main{
+.lobby-main{
     margin-top: 50%;
     background-color: #212121;
     /* background-color: #EEEEEE; */
@@ -33,4 +33,35 @@ main{
 }
 #App-Name{
     color: #FEA832;
+}
+
+/* ---------------- Room Styling ------------------- */
+#room-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #08469C;
+    margin-left: 5px;
+}
+#video-streams{
+    color: #FEA832;
+    background-color: #FEA832;
+    display: flex;
+    flex-wrap: wrap;
+    height: 85vh;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.video-container{
+    color: #FEA832;
+    flex-basis: 500px;
+    flex-grow: 1;
+    max-height: 100%;
+    min-height: 350px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 2px;
+    background-color: #212121;
 }

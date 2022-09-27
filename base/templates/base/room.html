@@ -1,7 +1,34 @@
 {% extends 'base/main.html' %}
 
 {%block content %}
+<main class="room-main">
+    <section id="room-name">
+        <p>Room Name: <span id="room-name"></span></p>
+    </section>
 
-<h1>Rooms</h1>
+    <section id="video-streams">
+        <div class="video-container" id="user-container-1">
+            <div class="username-wrapper" ><span class="user-name" > My Name </span></div>
+            <div class="video-player" id="user-1"></div>
+        </div>
+
+    </section>
+
+    <section id="video-streams">
+        <div class="video-container" id="user-container-2">
+            <div class="username-wrapper" ><span class="user-name" > My Name </span></div>
+            <div class="video-player" id="user-2"></div>
+        </div>
+
+    </section>
+
+    <section id="video-streams">
+        <div class="video-container" id="user-container-3">
+            <div class="username-wrapper" ><span class="user-name" > My Name </span></div>
+            <div class="video-player" id="user-3"></div>
+        </div>
+
+    </section>
+</main>
 
 {% endblock content %}
