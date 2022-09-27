@@ -7,7 +7,9 @@ body{
     background-color: #252525;
 }
 .lobby-main{
-    margin-top: 50%;
+    position: fixed;
+    top: 40%;
+    width: 100%;
     background-color: #212121;
     /* background-color: #EEEEEE; */
 }
