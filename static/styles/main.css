@@ -1,3 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: aquamarine;
+    background-color: #252525;
+}
+main{
+    margin-top: 50%;
+    background-color: #212121;
+    /* background-color: #EEEEEE; */
+}
+#form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#logo{
+    height: 100px;
+}
+.description{
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #08469C;
+}
+.description p{
+    margin-top: 30px;
+    padding-left: 0.5rem;
+}
+#App-Name{
+    color: #FEA832;
 }

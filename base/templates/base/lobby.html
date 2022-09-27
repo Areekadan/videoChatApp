@@ -1,7 +1,16 @@
 {% extends 'base/main.html' %}
 {% load static %}
 {%block content %}
-<img src="{% static 'images/chat.png' %}" alt="">
-<h1> Lobby </h2>
+
+<main>
+    <section id="form-container" >
+        <img src="{% static 'images/chat.png' %}" id="logo">
+    </section>
+    <div class="description">
+        <h1>Welcome to <span id="App-Name">Areekadan Chat</span></h2>
+        <p>Made specifically for me to video call friends</p>
+    </div>
+</main>
+
 
 {% endblock content %}
