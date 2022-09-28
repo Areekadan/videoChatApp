@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    /* box-sizing: border-box; */
 }
 body{
     background-color: #252525;
@@ -11,7 +11,6 @@ body{
     top: 40%;
     width: 100%;
     background-color: #212121;
-    /* background-color: #EEEEEE; */
 }
 #form-container{
     display: flex;
@@ -38,14 +37,13 @@ body{
 }
 
 /* ---------------- Room Styling ------------------- */
-#room-name{
+#room-name-wrapper{
+    color: #08469C;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #08469C;
-    margin-left: 5px;
-}
+ }
 #video-streams{
     color: #FEA832;
     background-color: #FEA832;
