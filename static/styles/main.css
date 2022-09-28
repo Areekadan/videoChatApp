@@ -1,7 +1,7 @@
 *{
-    /* margin: 0;
-    padding: 0; */
-    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
 body{
     background-color: #252525;
@@ -37,6 +37,10 @@ body{
 }
 
 /* ---------------- Room Styling ------------------- */
+.room-main{
+    height: 100%;
+    width: 100%;
+}
 #room-name-wrapper{
     color: #08469C;
     display: flex;
@@ -46,18 +50,18 @@ body{
  }
 #video-streams{
     color: #FEA832;
-    background-color: #FEA832;
     display: flex;
     flex-wrap: wrap;
-    height: 85vh;
+    flex-direction: row;
+    height: calc(50vh - 16px);
     width: 75%;
     margin: 0 auto;
 }
 
 .video-container{
-    color: #FEA832;
-    flex-basis: 500px;
+    flex-basis: 400px;
     flex-grow: 1;
+    display: block;
     max-height: 100%;
     min-height: 350px;
     border: 1px solid;
