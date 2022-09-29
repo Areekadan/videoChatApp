@@ -37,35 +37,38 @@ body{
 }
 
 /* ---------------- Room Styling ------------------- */
-.room-main{
-    height: 100%;
-    width: 100%;
-}
 #room-name-wrapper{
     color: #08469C;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-size: 40px;
  }
+ .stream-container{
+    padding: 2rem;
+    height: 95vh;
+}
+.grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(50rem,1fr));
+    gap: 1rem;
+}
 #video-streams{
     color: #FEA832;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: calc(50vh - 16px);
-    width: 75%;
-    margin: 0 auto;
+    overflow: hidden;
 }
 
 .video-container{
-    flex-basis: 400px;
-    flex-grow: 1;
-    display: block;
-    max-height: 100%;
-    min-height: 350px;
     border: 1px solid;
     border-radius: 5px;
-    margin: 2px;
+    height: 100%;
+    width: 100%;
     background-color: #212121;
+    overflow: hidden;
+}
+
+.video-player{
+    height: inherit;
+    width: inherit;
 }
