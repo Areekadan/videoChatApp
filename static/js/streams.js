@@ -16,7 +16,7 @@ let joinAndDisplayLocalStream = async () => {
                     <div class="username-wrapper" ><span class="user-name" > My Name </span></div>
                     <div class="video-player" id="user-${UID}"></div>
                 </div></section>`
-    document.getElementById('stream-customer-grid').insertAdjacentHTML('beforeend', player)
+    document.getElementById('stream-grid').insertAdjacentHTML('beforeend', player)
     localTracks[1].play(`user-${UID}`)
     
     await client.publish([localTracks[0], localTracks[1]])
@@ -34,7 +34,7 @@ let handleUserJoined = async (user, mediaType) => {
         <div class="username-wrapper" ><span class="user-name" > My Name </span></div>
         <div class="video-player" id="user-${user.uid}"></div>
     </div></section>`
-        document.getElementById('stream-customer-grid').insertAdjacentHTML('beforeend', player)
+        document.getElementById('stream-grid').insertAdjacentHTML('beforeend', player)
         user.videoTrack.play(`user-${user.uid}`)
     }
     if(mediaType === 'audio'){
