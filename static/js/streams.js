@@ -12,11 +12,11 @@ let joinAndDisplayLocalStream = async () => {
     client.on('user-published', handleUserJoined)
     UID = await client.join(APP_ID, CHANNEL, TOKEN, null)
     localTracks = await AgoraRTC.createMicrophoneAndCameraTracks()
-    let player = `<div class="video-container" id="user-container-${UID}">
+    let player = `<section id="video-streams"><div class="video-container" id="user-container-${UID}">
                     <div class="username-wrapper" ><span class="user-name" > My Name </span></div>
                     <div class="video-player" id="user-${UID}"></div>
-                </div>`
-    document.getElementById('video-streams').insertAdjacentHTML('beforeend', player)
+                </div></section>`
+    document.getElementById('stream-customer-grid').insertAdjacentHTML('beforeend', player)
     localTracks[1].play(`user-${UID}`)
     
     await client.publish([localTracks[0], localTracks[1]])
@@ -30,11 +30,11 @@ let handleUserJoined = async (user, mediaType) => {
         if(player != null){
             player.remove()
         }
-        player = `<div class="video-container" id="user-container-${user.uid}">
+        player = `<section id="video-streams"><div class="video-container" id="user-container-${user.uid}">
         <div class="username-wrapper" ><span class="user-name" > My Name </span></div>
         <div class="video-player" id="user-${user.uid}"></div>
-    </div>`
-        document.getElementById('video-streams').insertAdjacentHTML('beforeend', player)
+    </div></section>`
+        document.getElementById('stream-customer-grid').insertAdjacentHTML('beforeend', player)
         user.videoTrack.play(`user-${user.uid}`)
     }
     if(mediaType === 'audio'){
